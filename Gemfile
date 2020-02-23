@@ -65,3 +65,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'rails_12factor', '~> 0.0.3'
+gem 'sendgrid-ruby', '~> 6.1'

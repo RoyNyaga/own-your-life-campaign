@@ -94,8 +94,9 @@ Rails.application.configure do
 
   # ActionMailer Config
   config.action_mailer.default_url_options = { 
-    :host => 'https://own-your-life-campaign.herokuapp.com/'
+    :host => 'own-your-life-campaign.herokuapp.com'
   }
+
 
   # ActionMailer::Base.delivery_method = :smtp
   
