@@ -60,6 +60,11 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-# Added gems
 
+# Added gems
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'rails_12factor', '~> 0.0.3'
+gem 'sendgrid-ruby', '~> 6.1'
+gem 'activeadmin', '~> 2.6', '>= 2.6.1'
+gem 'country_select', '~> 4.0'

@@ -67,7 +67,7 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -91,4 +91,36 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { 
+    :host => 'https://own-your-life-campaign.herokuapp.com/'
+  }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+
+  ActionMailer::Base.smtp_settings = {
+   :user_name => ENV['SENDGRID_USERNAME'],
+   :password => ENV['SENDGRID_PASSWORD'],
+   :from => 'nyagaandreroy@gmail.com',
+   :domain => 'own-your-life-campaign.herokuapp.com',
+   :address => 'smtp.sendgrid.net',
+   :port => 587,
+   :authentication => :plain,
+   :enable_starttls_auto => true
+  }
+
+  # config.action_mailer.default_options = { from: 'nyagaandreroy@gmail.com' }
+
+  # config.action_mailer.smtp_settings = {
+  #  address: 'smtp.gmail.com', 
+  #  port: 587,
+  #  authentication: 'plain',
+  #  enable_starttls_auto: true,
+  #  user_name: ENV['GMAIL_USERNAME'],
+  #  password: ENV['GMAIL_PASSWORD'],
+  #  openssl_verify_mode: 'none'
+  #  }
+
 end
