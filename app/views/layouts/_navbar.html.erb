@@ -1,0 +1,21 @@
+<nav class="navbar navbar-light bg-faded">
+	<ul class="nav">
+		<li class="nav-item">
+			<%=link_to "Home", root_path, class: "nav-link"  %>
+		</li>
+		 <% if user_signed_in? %>
+			 <li class="nav-item">
+				<%= link_to "Logout", destroy_user_session_path, method: "delete", class: "nav-link", id: "logout" %>
+			</li>
+			<li class="nav-item active">
+				<%=link_to "lessons", lessons_path, class: "nav-link" %>
+			</li>
+			<% else %>
+			<li class="nav-item active">
+				<%=link_to "login", new_user_session_path, class: "nav-link" %>
+			</li>
+		<% end %>
+	</ul>
+</nav>
+
+
