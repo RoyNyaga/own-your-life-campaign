@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
-
+<div class="progress h-100">
+  <%= content_tag(:div, "#{@completion}%", class: "progress-bar progress-bar-striped h-100 h3", style: "width: #{@completion}%") %>
+</div>
+  <h1 class="text-primary">how</h1>
 <h1>Lessons</h1>
 
 <table>
@@ -17,7 +20,6 @@
     <% @lessons.each do |lesson| %>
       <tr>
         <td><%= lesson.name %></td>
-        <td><%= lesson.user %></td>
         <td><%= lesson.content %></td>
         <td><%= lesson.video_link %></td>
         <td><%= link_to 'Show', lesson %></td>
