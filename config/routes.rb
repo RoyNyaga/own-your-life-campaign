@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :lessons
+  resources :questionaires
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users, controllers: {
