@@ -105,7 +105,7 @@ Rails.application.configure do
    :password => ENV['SENDGRID_PASSWORD'],
    :domain => 'own-your-life-campaign.herokuapp.com',
    :address => 'smtp.sendgrid.net',
-   :port => 465,
+   :port => 25,
    :authentication => :plain,
    :enable_starttls_auto => true
   }
