@@ -4,14 +4,20 @@
     <title>OwnYourLifeCampaign</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Network with own-your-life-campaign">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    
     <%= render "layouts/navbar" %>
+    <%= render "layouts/header" %>
     <%= render "layouts/flash_messages" %>
+    
     <%= yield %>
+    
   </body>
 </html>

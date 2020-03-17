@@ -1,21 +1,24 @@
-<nav class="navbar navbar-light bg-faded">
-	<ul class="nav">
-		<li class="nav-item">
-			<%=link_to "Home", root_path, class: "nav-link"  %>
-		</li>
-		 <% if user_signed_in? %>
-			 <li class="nav-item">
-				<%= link_to "Logout", destroy_user_session_path, method: "delete", class: "nav-link", id: "logout" %>
-			</li>
-			<li class="nav-item active">
-				<%=link_to "lessons", lessons_path, class: "nav-link" %>
-			</li>
-			<% else %>
-			<li class="nav-item active">
-				<%=link_to "login", new_user_session_path, class: "nav-link" %>
-			</li>
-		<% end %>
-	</ul>
+
+<nav class="navbar navbar-expand-md fixed-top" id="navbar-wrapper-nav">
+	<a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/it-s-tech/image/upload/v1584408122/own-your-life/Own_Yout-01_fjzxgp.png" style="width: 5%;"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+    <span class="navbar-toggler-icon"><i class="fas fa-sliders-h text-white"></i></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+  	<ul class="navbar-nav ml-auto h5">
+  		<li class="nav-item">
+  			<a class="nav-link" href="#home">Home</a>
+  		</li>
+  		<li class="nav-item">
+  			<a class="nav-link" href="#technology-div">Technology</a>
+  		</li>
+  		<li class="nav-item">
+  			<a class="nav-link" href="#short-service-description-div">About</a>
+  		</li>
+  		<li class="nav-item">
+  			<a class="nav-link" href="#differences-section-div">Resources</a>
+  		</li>	  		
+  	</ul>
+  </div>
 </nav>
-
-

@@ -1,0 +1,185 @@
+body{
+	margin: 0px;
+}
+/*#######button classes#########*/
+
+.button-bg-black{
+	padding: 10px;
+	border: 2px solid white;
+	color: white;
+	background: #26292d;
+}
+
+.button-bg-black:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+.button-bg-green{
+	padding: 10px;
+	border: 2px solid white;
+	color: white;
+	background: #0f3829;
+}
+
+.button-bg-green:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+/*############# button classes end ############# */
+
+/*####### navbar-header-carousel #######*/
+
+#navbar-wrapper-nav{
+	background: #1f2933b3;
+}
+
+.nav-link{
+	color: white;	
+}
+
+.nav-link:hover{
+	color: black;
+	padding: 10px;
+	background: white;	
+}
+
+.carousel-item{
+	height: 100vh;
+	min-height: 300px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background: red;
+}
+
+.carousel-caption{
+	bottom: 350px;
+}
+.carousel-caption h5{
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	background: #1f2933b3;
+}
+
+.carousel-caption p{
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	background: #1f2933b3;
+}
+
+.carousel-caption a{
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+
+.w-100{
+	height: 100vh;
+}
+
+
+/*######### Forms ##########*/
+#from-section-div{
+	background: url("first.jpg")center/cover no-repeat;
+	height: 100vh;
+}
+
+
+.form-control{
+	border: none;
+	border-bottom: 2px solid white;
+	margin-bottom: 5px;
+	background: transparent;
+	outline: none;
+	color: white;
+}
+
+.form-control:focus{
+	background: transparent;
+	border: none;
+	outline: none;
+	border-top: 2px solid white;
+	color: white;
+}
+
+.form-control::placeholder {
+	text-align: center;
+  color: #f5f1f18a;
+  opacity: 1;
+}
+
+#sign-up-form-column{
+	background: #202529b5;
+	padding: 20px;
+	padding: 20px 50px;
+}
+
+#sign-up-login-form-column{
+	background: #9e7d176b;
+	padding: 20px 50px;
+}
+
+.authentication-submit-button {
+	padding: 10px 20px;
+	background: #9e7d176b;
+	border: 2px solid white;
+	margin-top: 10px;
+	border-radius: 20px;
+
+}
+
+/*###### Home page section start ######*/
+
+#home-page-level-one-left{
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408152/own-your-life/Site_pic_1_fjboeb.jpg")center/cover no-repeat;
+	height: 50vh;
+}
+
+#home-page-level-one-right{
+	background: #f73f07;
+}
+
+.home-page-level-three-green-div{
+	background: #0f3829;
+	color: white;
+}
+
+.home-page-level-three-green-div h2{
+	font-size: 3em;
+}
+
+#home-page-level-four-green-div{
+	background: #218838;
+}
+
+#why-most-people-are-poor-picture{
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408153/own-your-life/2600_s4sn4z.jpg")center/cover no-repeat;
+}
+
+#home-page-level-five-div{
+	background: #0f3829;
+	color: white;
+	text-align: center;
+}
+
+.home-page-level-six-orange-div{
+	background: #f73f07;
+	color: white;
+}
+
+#home-page-level-seven-div{
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1584408098/own-your-life/Banner_1_pyhquv.jpg')center/cover fixed no-repeat;
+}
+/*Home page section end*/
