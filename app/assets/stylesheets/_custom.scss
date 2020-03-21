@@ -1,5 +1,7 @@
 body{
 	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
 }
 /*#######button classes#########*/
 
@@ -21,7 +23,7 @@ body{
 	padding: 10px;
 	border: 2px solid white;
 	color: white;
-	background: #0f3829;
+	background: #0a6363;
 }
 
 .button-bg-green:hover{
@@ -36,21 +38,22 @@ body{
 /*####### navbar-header-carousel #######*/
 
 #navbar-wrapper-nav{
-	background: #1f2933b3;
+	background: white;
 }
 
 .nav-link{
-	color: white;	
+	color: black;	
 }
 
 .nav-link:hover{
-	color: black;
 	padding: 10px;
-	background: white;	
+	border-bottom: 2px solid black;
+	text-decoration: none;
+	color: black;
 }
 
 .carousel-item{
-	height: 100vh;
+	height: 100%;
 	min-height: 300px;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -144,15 +147,23 @@ body{
 
 #home-page-level-one-left{
 	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408152/own-your-life/Site_pic_1_fjboeb.jpg")center/cover no-repeat;
-	height: 50vh;
+}
+
+#home-page-level-one-left-small{
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408152/own-your-life/Site_pic_1_fjboeb.jpg")center/cover no-repeat;
+	height: 42vh;
 }
 
 #home-page-level-one-right{
-	background: #f73f07;
+	background: #ff6363;
+}
+
+#home-page-level-two-div{
+	font-family: 'Bevan', cursive;	
 }
 
 .home-page-level-three-green-div{
-	background: #0f3829;
+	background: #0a6363;
 	color: white;
 }
 
@@ -161,7 +172,7 @@ body{
 }
 
 #home-page-level-four-green-div{
-	background: #218838;
+	background: #24b288;
 }
 
 #why-most-people-are-poor-picture{
@@ -169,17 +180,46 @@ body{
 }
 
 #home-page-level-five-div{
-	background: #0f3829;
+	background: #0a6363;
 	color: white;
 	text-align: center;
+	margin: 100px 0;
 }
 
 .home-page-level-six-orange-div{
-	background: #f73f07;
+	background: #ff6633;
 	color: white;
 }
 
 #home-page-level-seven-div{
 	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1584408098/own-your-life/Banner_1_pyhquv.jpg')center/cover fixed no-repeat;
 }
+
+#new_message .form-control {
+	border-bottom: 2px solid #989494;
+	color: black;
+}
+
+#new_message .form-control:focus {
+	outline: none;
+}
+
+#send-message-button{
+	background: #ff6633;
+	padding: 10px;
+}
+
+.home-page-contact-icons{
+	font-size: 1.7em;
+	padding: 10px;
+	background: #ff6633;
+	border: 2px solid #f73f07;
+	border-radius: 50px;
+	color: white;
+}
+
+.special{
+	padding-left: 58px;
+}
+
 /*Home page section end*/
