@@ -3,6 +3,18 @@ body{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.2em;
 }
+
+.bold{
+	font-weight: 700;
+}
+
+.first-letter-decoration{
+	font-size: 2em;
+	position: relative;
+	top: 7px;
+	color: #1ba8ca;
+}
+
 /*#######button classes#########*/
 
 .button-bg-black{
@@ -222,4 +234,36 @@ body{
 	padding-left: 58px;
 }
 
-/*Home page section end*/
+/*######### Home page section end########## */
+
+/*########## About page Start ########*/
+.fa-comments-dollar{
+	color: #fda331;
+	font-size: 2em;
+}
+
+#home-page-level-two{
+	border-right: 2px solid #fda331;
+	background: #f1e3d1;
+}
+
+#home-page-level-three-div{
+	border-left: 2px solid #fda331;
+	background: #f1e3d1;
+}
+
+.fa-exclamation{
+	font-size: 1.5em;
+	color: #fda331;
+}
+
+#about-page-level-four-div{
+	border-top: 5px solid #fda331;
+	background: f1e3d1;
+}
+
+#about-page-level-five-div{
+	border-left: 2px solid #fda331;
+	background: #fda331;
+	color: black;
+}

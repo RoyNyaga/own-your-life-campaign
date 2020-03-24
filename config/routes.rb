@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   	confirmations: 'confirmations', registrations: 'registrations'
   }
 	root 'pages#home'
-  get 'pages/about'
+  get 'pages/about', as: "about"
   get 'pages/contact'
   get '/course/:id', to: 'lessons#create_course', as: 'course'
   resources :messages
