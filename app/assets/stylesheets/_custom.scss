@@ -17,28 +17,42 @@ body{
 
 /*#######button classes#########*/
 
-.button-bg-black{
+.button-bg-red{
 	padding: 10px;
-	border: 2px solid white;
+	border: 2px solid #de1a1a;
 	color: white;
-	background: #26292d;
+	background: #de1a1a;
 }
 
-.button-bg-black:hover{
+.button-bg-red:hover{
 	background: white;
 	color: black;
 	border: 2px solid black;
 	text-decoration: none;
 }
 
-.button-bg-green{
+.button-bg-blue{
 	padding: 10px;
-	border: 2px solid white;
+	border: 2px solid #7acde0;
 	color: white;
-	background: #0a6363;
+	background: #7acde0;
 }
 
-.button-bg-green:hover{
+.button-bg-blue:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+.button-bg-orange{
+	padding: 10px;
+	border: 1px solid #ff6633;
+	color: white;
+	background: #ff6633;
+}
+
+.button-bg-orange:hover{
 	background: white;
 	color: black;
 	border: 2px solid black;
@@ -158,7 +172,7 @@ body{
 /*###### Home page section start ######*/
 
 #home-page-level-one-left{
-	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408152/own-your-life/Site_pic_1_fjboeb.jpg")center/cover no-repeat;
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1585429836/own-your-life/Layer_7_w1bupb.jpg")center/cover no-repeat;
 }
 
 #home-page-level-one-left-small{
@@ -167,24 +181,29 @@ body{
 }
 
 #home-page-level-one-right{
-	background: #ff6363;
+	background: #ff6633;
 }
 
 #home-page-level-two-div{
 	font-family: 'Bevan', cursive;	
 }
 
-.home-page-level-three-green-div{
-	background: #0a6363;
+.home-page-level-three-blue-div{
+	background: #7acde0;
 	color: white;
 }
 
-.home-page-level-three-green-div h2{
-	font-size: 3em;
+.level-three-icons {
+	color: #5f5b5b;
+	background: white;
+	font-size: 1em;
+	padding: 20px;
+	border: 1px solid white;
+	border-radius: 50px;
 }
 
-#home-page-level-four-green-div{
-	background: #24b288;
+#home-page-level-four-blue-div{
+	background: #7acde0;
 }
 
 #why-most-people-are-poor-picture{
@@ -201,6 +220,10 @@ body{
 .home-page-level-six-orange-div{
 	background: #ff6633;
 	color: white;
+}
+
+.home-page-level-six-blue-div{
+	background: #7acde0;
 }
 
 #home-page-level-seven-div{
@@ -242,12 +265,12 @@ body{
 	font-size: 2em;
 }
 
-#home-page-level-two{
+#about-page-level-two{
 	border-right: 2px solid #fda331;
 	background: #f1e3d1;
 }
 
-#home-page-level-three-div{
+#about-page-level-three-div{
 	border-left: 2px solid #fda331;
 	background: #f1e3d1;
 }
