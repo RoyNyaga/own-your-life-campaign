@@ -13,4 +13,9 @@ class PagesController < ApplicationController
   def lifestyle
 
   end
+
+
+  def cfg
+
+  end
 end
