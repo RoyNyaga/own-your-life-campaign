@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   }
 	root 'pages#home'
   get 'pages/about', as: "about"
+  get 'pages/lifestyle', as: "lifestyle"
   get 'pages/contact'
   get '/course/:id', to: 'lessons#create_course', as: 'course'
   resources :messages
