@@ -297,11 +297,38 @@ body{
 /*######### Home page section end########## */
 
 /*########## About page Start ########*/
+
 .about-page-headings-blue {
 	color: #3ebfd4;
 }
 
-/*######### life-style-page ##########*/
+/*######### life-style-page ##########*/ 
+
 #life-style-page-level-one{
 	
+}
+
+/*############## contact page ##########*/
+
+.contact-links {
+	color: #1ba8ca;
+}
+
+.contact-links:hover {
+	color: #1ba8ca;
+}
+
+/*################### Footer ###############*/
+#footer-section {
+	padding: 40px 0;
+	background: #175c6d;
+	color: white;
+}
+
+.footer-links{
+	color: white;
+}
+
+.footer-links:hover{
+	color: #fda331;
 }

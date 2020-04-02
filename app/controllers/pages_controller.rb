@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @message = Message.new
   end
 
   def lifestyle
@@ -18,4 +19,5 @@ class PagesController < ApplicationController
   def cfg
 
   end
+
 end

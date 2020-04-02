@@ -1,2 +1,34 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<div class="container">
+	<div class="text-center my-5">
+		<p>GOT A QUESTION</p>
+		<h2>Contact OYLCAMPAIGN</h2>
+		<p>We're here to help and answer any question you might <br> have. We look forward to hearing from you.</p>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-6 d-flex align-items-center">
+        	<div>
+        		<h2>How Can We Help?</h2>
+        		<p>Please select a topic below related to your inquiry. If you don't find what you need, fill out our contact form.</p>
+        		<ul class="list-group">
+        			<li class="list-group-item"><a class="contact-links" href="/pages/about">What to know more about us?</a></li>
+        			<li class="list-group-item"><a class="contact-links" href="#">Want to book a business presentation?</a></li>
+        			<li class="list-group-item"><a class="contact-links" href="/pages/lifestyle">Want to know about our lifestyle?</a></li>
+        		</ul>
+        	</div>
+        </div>
+        <div class="col-md-1">
+		</div>
+		<div class="col-md-5 text-dark my-5">
+            <%= simple_form_for @message do |f| %>
+              <%= f.input :name %>
+              <%= f.input :email %>
+              <%= f.input :whatsapp_number %>
+              <%= f.input :message %>
+              <%= f.button :submit, "SEND MESSAGE", id: "send-message-button" %>
+            <% end %>
+        </div>
+        
+	</div>
+</div>
+	
