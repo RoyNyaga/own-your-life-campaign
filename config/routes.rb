@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'pages/lifestyle', as: "lifestyle"
   get 'pages/cfg', as: "cfg"
   get 'pages/contact', as: "contact"
+  get "pages/appointment", as: "appointment"
   get '/course/:id', to: 'lessons#create_course', as: 'course'
   resources :messages
 

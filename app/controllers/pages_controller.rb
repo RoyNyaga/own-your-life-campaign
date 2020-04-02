@@ -20,4 +20,8 @@ class PagesController < ApplicationController
 
   end
 
+  def appointment
+    @message = Message.new
+  end
+
 end
