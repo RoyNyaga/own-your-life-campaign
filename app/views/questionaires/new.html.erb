@@ -1,35 +1,97 @@
-<h1>Questionaire</h1>
+<div class="container d-none d-md-block" id="questionaire-wrapper" style="margin-top: 150px">
+  <h3 class="my-5 text-center">No selling, no registration fee, limited membership available</h3>
+  <%= simple_form_for(@questionaire) do |f| %>
+    <%= f.error_notification %>
+    	<ol>
+    		<li>
+    			<%= f.input :question_one, as: :radio_buttons, required: true, collection: ["Be in business for yourself", "Work for someone else"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Would you prefer being in your own business or working for someone else?"
+              %>
+    		</li>
+    		<li>
+    			<%= f.input :question_two, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you have any business or project that needs funding?" %>
+    		</li>
+    		<li>
+    			<%= f.input :question_three, as: :radio_buttons, required: true, collection: ["100.000-500.000", "500.001-1.000.000", "1.000.001-2.000.000", "2.000.001 and above"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "How much would you need to startup or expand this business or project in FCFA?" %>
+    		</li>
+    		<li>
+          <p>Name the business or project you will be starting if you raise the desired capital?</p>
+    			<%= f.input :question_four, required: true, label: false %>
+    		</li>
+    		<li>
+    			<%= f.input :question_five, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitaions?" %>
+    		</li>
+    		<div class="row">
+          <div class="col-md-4">
+            <%= f.input :name, required: true %>
+          </div>
+          <div class="col-md-4">
+            <%= f.input :phone, required: true %>
+          </div>
+          <div class="col-md-4">
+            
+          </div>
+    			
+      		
+    		</div>
+    	</ol>
+      <%= f.button :submit, "Submit form", id: "questionaire-btn" %>
+  <% end %>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center mt-5 p-5" id="questionaire-last-div">
+      <h5>If you are selected you will receive a call in the next three(3) days from one of our consultants.</h4>
+      <h4>Thank you for your time</h4>
+    </div>
+    <div class="col-md-3"></div>
 
-<%= simple_form_for(@questionaire) do |f| %>
-  <%= f.error_notification %>
-  	<ol>
-  		<li>
-  			<p>Would you prefer being in your own business or working for someone else?</p>
-  			<%= f.input :question_one, as: :radio_buttons, required: true, collection: ["Be in business for yourself", "Work for someone else"], item_wrapper_class: "d-inline-block radio-buttons mx-3" %>
-  		</li>
-  		<li>
-  			<p>Do you have any business or project that needs funding?</p>
-  			<%= f.input :question_two, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3" %>
-  		</li>
-  		<li>
-  			<p>How much would you need to startup or expand this business or project in FCFA?</p>
-  			<%= f.input :question_three, as: :radio_buttons, required: true, collection: ["100.000-500.000", "500.001-1.000.000", "1.000.001-2.000.000", "2.000.001 and above"], item_wrapper_class: "d-inline-block radio-buttons mx-3" %>
-  		</li>
-  		<li>
-  			<p>Name the business or project you will be starting if you rais the desired capital?</p>
-  			<%= f.input :question_four, required: true, label: false %>
-  		</li>
-  		<li>
-  			<p>If a reservation is made for you to reciew the details fo this campaign will you spare some time out of your busy schedule to honor the invitaions?</p>
-  			<%= f.input :question_five, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3" %>
-  		</li>
-  		<h4>Please leave us your contact before you</h4>
-  		<div class="d-flex justify-content-between w-50">
-  			<%= f.input :name, required: true %>
-    		<%= f.input :phone, required: true %>
-  		</div>
-  	</ol>
-    <%= f.button :submit, "Submit form" %>
-<% end %>
-<h4>If you are selected you will receive a call in the next three(3) days from one of our consultants.</h4>
-<h2>Thank you for your time</h2>
+  </div>
+</div>
+
+<div class="container d-md-none" id="questionaire-wrapper" style="margin-top: 100px">
+  <h3 class="my-5 text-center">No selling, no registration fee, limited membership available</h3>
+  <%= simple_form_for(@questionaire) do |f| %>
+    <%= f.error_notification %>
+      <ol>
+        <li>
+          <%= f.input :question_one, as: :radio_buttons, required: true, collection: ["Be in business for yourself", "Work for someone else"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Would you prefer being in your own business or working for someone else?"
+              %>
+        </li>
+        <li>
+          <%= f.input :question_two, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you have any business or project that needs funding?" %>
+        </li>
+        <li>
+          <%= f.input :question_three, as: :radio_buttons, required: true, collection: ["100.000-500.000", "500.001-1.000.000", "1.000.001-2.000.000", "2.000.001 and above"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "How much would you need to startup or expand this business or project in FCFA?" %>
+        </li>
+        <li>
+          <p>Name the business or project you will be starting if you raise the desired capital?</p>
+          <%= f.input :question_four, required: true, label: false %>
+        </li>
+        <li>
+          <%= f.input :question_five, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitaions?" %>
+        </li>
+        <div class="row">
+          <div class="col-md-4">
+            <%= f.input :name, required: true %>
+          </div>
+          <div class="col-md-4">
+            <%= f.input :phone, required: true %>
+          </div>
+          <div class="col-md-4">
+            
+          </div>
+          
+          
+        </div>
+      </ol>
+      <%= f.button :submit, "Submit form", id: "questionaire-btn" %>
+  <% end %>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center mt-5 p-5" id="questionaire-last-div">
+      <h5>If you are selected you will receive a call in the next three(3) days from one of our consultants.</h4>
+      <h4>Thank you for your time</h4>
+    </div>
+    <div class="col-md-3"></div>
+
+  </div>
+</div>

@@ -332,3 +332,41 @@ body{
 .footer-links:hover{
 	color: #fda331;
 }
+
+/*########### Questionaire ######*/
+
+#questionaire-wrapper{
+	background: #1ba8ca;
+	padding: 10px;
+	border: 5px solid #f18905;
+	border-radius: 10px;	
+}
+
+.new_questionaire input {
+	border-bottom: 2px solid #f18905;
+	color: black;
+}
+
+.new_questionaire input:focus {
+	color: black;
+	border: none;
+	border-bottom: 2px solid #f18905;
+	outline: none; 
+}
+
+#questionaire-last-div{
+	background: #b2e4f1;
+	border: 2px solid #f18905;
+}
+
+#questionaire-btn{
+	padding: 10px;
+	border: 2px solid #f18905;
+	background: #89def3;
+	position: relative;
+	left: 20px;
+}
+
+#questionaire-btn:hover {
+	background: transparent;
+}
