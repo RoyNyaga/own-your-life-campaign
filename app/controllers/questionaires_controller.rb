@@ -17,8 +17,8 @@ class QuestionairesController < ApplicationController
 
   def questionaire_params
   	params.require(:questionaire).permit(:question_one, :question_two, 
-  		:question_three, :question_four, :question_five, :name, :phone,
-  		 :whats_app, :linkedin, :twitter, :referral_code)
+  		:question_three, :question_four, :question_five, :question_six, :question_seven, :name, :phone,
+  		 :whats_app, :facebook, :referral_code)
   end
 
 end

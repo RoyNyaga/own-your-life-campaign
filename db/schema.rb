@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_03_223816) do
+ActiveRecord::Schema.define(version: 2020_04_04_183100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -72,15 +72,16 @@ ActiveRecord::Schema.define(version: 2020_04_03_223816) do
     t.string "question_two"
     t.string "question_three"
     t.string "question_four"
-    t.string "question_five"
+    t.string "question_seven"
     t.string "name"
     t.string "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "whats_app"
-    t.string "linkedin"
-    t.string "twitter"
     t.string "referral_code"
+    t.string "facebook"
+    t.string "question_five"
+    t.string "question_six"
   end
 
   create_table "users", force: :cascade do |t|

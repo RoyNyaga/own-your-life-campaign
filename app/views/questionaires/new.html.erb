@@ -1,7 +1,7 @@
 <div class="container d-none d-md-block web-view-margin" style="margin-top: 150px"></div>
 <div class="container d-md-none phone-view-margin" style="margin-top: 100px"></div>
 <div class='container'>
-  <h5 class="">NO SELLING!!! NO REGISTRATION!!! LIMITED MEMBERSHIP AVAILABLE.</h5>
+  <h5 class="">NO SELLING NO REGISTRATION! limited membership available.</h5>
   <h5 class="my-5 text-center bold">Quick Survey</h5>
 </div>
 
@@ -24,21 +24,21 @@
           <p>Name the business or project you will be starting if you raise the desired capital?</p>
     			<%= f.input :question_four, required: true, label: false %>
     		</li>
+        <li>
+          <%= f.input :question_five, as: :radio_buttons, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you need financial aid for anything else apart from to start a business?" %>
+        </li>
+        <li>       
+          <%= f.input :question_six, label: "If yes what?" %>
+        </li>
     		<li>
-    			<%= f.input :question_five, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitaions?" %>
+    			<%= f.input :question_seven, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitaions?" %>
     		</li>
       </ol>
     		<div class="row">
           <div class="col-md-12">
               <h6 class="bold"><u>Personal Information</u></h6>
           </div>
-          <div class="col-md-4 text-center">
-          </div>
-          <div class="col-md-4 text-center">
-            <%= f.input :referral_code %>
-          </div>
-          <div class="col-md-4 text-center">
-          </div>
+          <div class="col-md-1"></div>
           <div class="col-md-2">
             <%= f.input :name, required: true %>
           </div>
@@ -48,12 +48,15 @@
           <div class="col-md-2">
             <%= f.input :whats_app %>
           </div>
-          <div class="col-md-2">
-            <%= f.input :linkedin %>
+          <div class="col-md-4">
+            <%= f.input :facebook %>
           </div>
-    			<div class="col-md-4">
-            <%= f.input :twitter %>
-          </div>     		
+          <div class="col-md-1"></div>
+          <div class="col-md-4 text-center">
+          </div>
+          <div class="col-md-4 text-center">
+            <%= f.input :referral_code %>
+          </div>   		
     		</div>
     	
       <%= f.button :submit, "Submit form", id: "questionaire-btn" %>
