@@ -27,31 +27,42 @@
         <li>
           <%= f.input :question_five, as: :radio_buttons, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you need financial aid for anything else apart from to start a business?" %>
         </li>
-        <li>       
+         <li>       
           <%= f.input :question_six, label: "If yes what?" %>
         </li>
-    		<li>
-    			<%= f.input :question_seven, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitaions?" %>
-    		</li>
+        <li>
+          <%= f.input :question_seven, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitaions?" %>
+        </li>
+        <li>
+          <%= f.input :question_eight, as: :radio_buttons, required: true, collection: ["Yes", "No", "I do but I’m in Isolation"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you currently have a job ?" %>
+        </li>
+        <li>
+          <%= f.input :question_nine, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: " have you ever worked online before?" %>
+        </li>
+        <li>
+          <%= f.input :question_ten, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If not would you mind working from home?" %>
+        </li>
+       
       </ol>
     		<div class="row">
           <div class="col-md-12">
               <h6 class="bold"><u>Personal Information</u></h6>
           </div>
-          <div class="col-md-1"></div>
           <div class="col-md-2">
             <%= f.input :name, required: true %>
           </div>
           <div class="col-md-2">
             <%= f.input :phone, required: true %>
           </div>
+          <div class="col-md-3">
+            <%= f.input :country_select, required: true, label: "Country" %>
+          </div>
           <div class="col-md-2">
             <%= f.input :whats_app %>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <%= f.input :facebook %>
           </div>
-          <div class="col-md-1"></div>
           <div class="col-md-4 text-center">
           </div>
           <div class="col-md-4 text-center">

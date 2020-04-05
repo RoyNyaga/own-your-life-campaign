@@ -1,6 +1,13 @@
 body{
 	margin: 0px;
 	font-family: 'Roboto Slab', serif;
+	font-size: 1.1em;
+}
+
+.alert{
+	margin-top: 130px;
+	font-size: 1.5em;
+
 }
 
 .bold{
@@ -364,6 +371,10 @@ body{
 
 #questionaire-btn:hover {
 	background: transparent;
+}
+
+#questionaire_country_select{
+	color: black;
 }
 
 /*############# blog #############*/

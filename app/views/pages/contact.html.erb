@@ -33,14 +33,63 @@
         <div class="col-md-1">
 		</div>
 		<div class="col-md-5 text-dark my-5">
-            <%= simple_form_for @message do |f| %>
-              <%= f.input :name %>
-              <%= f.input :email %>
-              <%= f.input :whatsapp_number %>
-              <%= f.input :message %>
-              <%= f.button :submit, "SEND MESSAGE", id: "send-message-button" %>
-            <% end %>
+      <div id="form">
+        <%= simple_form_for @message do |f| %>
+          <%= f.input :name %>
+          <%= f.input :email %>
+          <%= f.input :whatsapp_number %>
+          <%= f.input :message %>
+          <%= f.button :submit, "SEND MESSAGE", id: "send-message-button" %>
+        <% end %>
+      </div>
+      <div>
+        <div class="mt-5">
+          <div class="d-flex">
+            <div class="home-page-contact-icon-div">
+              <i class="far fa-envelope home-page-contact-icons"></i>
+            </div>
+            <div class="pl-5">
+              <h6 style="font-weight: 700">Email</h6>
+              <p>info@oylcampaign.com</p>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="home-page-contact-icon-div">
+              <i class="fas fa-mobile-alt home-page-contact-icons"></i>
+            </div>
+            <div class="special">
+              <h6 style="font-weight: 700">CALL US !</h6>
+              <p>Nigeria: +234 808 435 0129</p>
+              <p>Cameroon: +237 676 463 196</p> 
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <div class="home-page-contact-icon-div">
+              <i class="fas fa-map-marked-alt home-page-contact-icons"></i>
+            </div>
+            <div class="pl-5">
+              <h6 style="font-weight: 700">ADDRESS</h6>
+              <p>Suite 8 Shallom Plaza, beside Ajuji Hotel, Gudu District, Apo, FCT - Abuja </p>
+              <p>Venue Suite D2 Elim Plaza,Beside Oakland Hotel,along Ebeano Tunnel Road, Enugu</p>
+            </div>
+          </div>
+
+          <div>
+            <p class="bold py-5">For more inquiries and to know the office close to you please call us using the numbers above.</p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+              <a href="https://twitter.com/OYL_Campaign" target="_blank"><i class="fab fa-twitter-square twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
+              <a href="https://www.linkedin.com/company/oyl-campaign/" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>
+              <a href="#"><i class="fab fa-whatsapp-square whatsapp"></i></a>
+            </div>
+            
         </div>
+      </div>     
+    </div>
         
 	</div>
 </div>
