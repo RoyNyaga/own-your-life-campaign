@@ -93,7 +93,7 @@ body{
 }
 
 .carousel-caption{
-	bottom: 350px;
+	bottom: 250px;
 }
 .carousel-caption h5{
 	font-size: 45px;
@@ -191,7 +191,7 @@ body{
 }
 
 #home-page-level-two-div{
-	font-family: 'Bevan', cursive;	
+	font-family: 'Oswald', sans-serif;	
 }
 
 .home-page-level-three-blue-div{
@@ -322,6 +322,12 @@ body{
 
 .contact-links:hover {
 	color: #1ba8ca;
+}
+
+.about-testimony-photos {
+	width: 100%;
+	border: 2px solid white;
+	border-radius: 50%;
 }
 
 /*################### Footer ###############*/
