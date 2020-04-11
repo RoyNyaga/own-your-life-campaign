@@ -1,22 +1,50 @@
-<div class="container" style="margin-top: 100px;">
-	<div style="margin-top:140px;" class="text-center my-5 d-none d-md-block">
-		<h2>Book a business presentation</h2>
-		<p class="mt-5">Schedule a meeting with a member of <br> our team by feeling the form below with your correct infomation.</p>
-	</div>
-
-  <div style="padding-top: 30px;" class="text-center my-3 d-md-none">
-    <h2>Book A Business Appointment</h2>
-    <p class="mt-4">Schedule a meeting with a member of <br> our team by feeling the form below with your correct infomation.</p>
+<div class="container-fluid p-0">
+  <div id="presentaion-header-div" class="d-none d-md-block"></div>
+  <div id="presentation-header-div-phone" class="d-md-none">
+    <div class="card text-center">
+      <img class="card-img-top" src="https://res.cloudinary.com/it-s-tech/image/upload/v1586630088/own-your-life/wall_mock_up_1_vsofjo.jpg" alt="Card image cap">
+    </div>
   </div>
-	
+  <h4 class="text-center mt-5 bold">We've been expecting you</h5>
+  <h4 class="text-center bold">SECURE YOUR LIFE CHANGING OPPORTUNITY NOW</h5>
+</div>
+
+<div class="container" style="margin-top: 100px;">
 	<div class="row">
-		<div class="col-md-5 text-dark my-4 mx-auto">
-        <%= simple_form_for @message do |f| %>
-          <%= f.input :name %>
-          <%= f.input :email %>
-          <%= f.input :whatsapp_number %>
-          <%= f.input :message %>
-          <%= f.button :submit, "SEND MESSAGE", id: "send-message-button" %>
+    <div class="col-md-5">
+      <div class="card text-center">
+        <img class="card-img-top" src="https://res.cloudinary.com/it-s-tech/image/upload/v1586630095/own-your-life/3535686_1_dyffei.jpg" alt="Card image cap">      
+      </div>
+      <p class="mt-3">WE'LL CONTACT YOU AND SEND YOU AN INVITE FOR THE FULL PRESENTATION OPPORTUNITY AND COMPLETE REGISTRATION ONLINE.</p>
+    </div>
+    <div class="col-md-1"></div>
+		<div id="presentation-form-div" class="col-md-6 text-dark my-4 mx-auto">
+        <%= simple_form_for @presentation do |f| %>
+        <div class="row">
+          <div class="col-md-6">
+            <%= f.input :first_name %>
+          </div>
+          <div class="col-md-6">
+            <%= f.input :last_name %>
+          </div>
+          <div class="col-md-6">
+             <%= f.input :phone %>
+          </div>
+          <div class="col-md-6">
+             <%= f.input :email %>
+          </div>
+           <div class="col-md-12">
+             <%= f.input :facebook_username %>
+          </div>
+          <div class="col-md-12">
+             <%= f.input :address %>
+          </div>
+          <div class="col-md-12">
+             <%= f.input :expectations %>
+          </div>
+          <%= f.button :submit, "BOOK", id: "send-presentation-button", class: "mx-auto"%>
+        </div>                  
+          
         <% end %>
     </div>
         

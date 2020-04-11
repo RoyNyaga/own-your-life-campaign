@@ -24,7 +24,7 @@ class PagesController < ApplicationController
   end 
 
   def appointment
-    @message = Message.new
+    @presentation = Presentation.new
   end
 
 end

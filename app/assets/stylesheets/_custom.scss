@@ -125,56 +125,6 @@ body{
 }
 
 
-/*######### Forms ##########*/
-#from-section-div{
-	background: url("first.jpg")center/cover no-repeat;
-	height: 100vh;
-}
-
-
-.form-control{
-	border: none;
-	border-bottom: 2px solid white;
-	margin-bottom: 5px;
-	background: transparent;
-	outline: none;
-	color: white;
-}
-
-.form-control:focus{
-	background: transparent;
-	border: none;
-	outline: none;
-	border-top: 2px solid white;
-	color: white;
-}
-
-.form-control::placeholder {
-	text-align: center;
-  color: #f5f1f18a;
-  opacity: 1;
-}
-
-#sign-up-form-column{
-	background: #202529b5;
-	padding: 20px;
-	padding: 20px 50px;
-}
-
-#sign-up-login-form-column{
-	background: #9e7d176b;
-	padding: 20px 50px;
-}
-
-.authentication-submit-button {
-	padding: 10px 20px;
-	background: #9e7d176b;
-	border: 2px solid white;
-	margin-top: 10px;
-	border-radius: 20px;
-
-}
-
 /*###### Home page section start ######*/
 
 #home-page-level-one-left{
@@ -237,17 +187,23 @@ body{
 }
 
 #new_message .form-control {
+	border: none;
 	border-bottom: 2px solid #989494;
 	color: black;
 }
 
 #new_message .form-control:focus {
 	outline: none;
+	border: none;
 }
 
 #send-message-button{
 	background: #ff6633;
 	padding: 10px;
+}
+
+#send-message-button:hover{
+	background: #efa288;
 }
 
 .home-page-contact-icons{
@@ -395,4 +351,24 @@ body{
 
 .blog-medium-headings {
 	color: #e0840f;
+}
+
+/*################# Appointment section ##################*/
+#presentaion-header-div {
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1586630088/own-your-life/wall_mock_up_1_vsofjo.jpg)center/cover fixed no-repeat;
+	height: 60vh;
+}
+
+#presentation-form-div{
+	background: #f3ce9f;
+	padding: 20px;
+}
+
+#send-presentation-button{
+	padding: 10px;
+	width: 120px;
+	background: #ff6633;
+}
+#send-presentation-button:hover{
+	background: #f19a7d;
 }
