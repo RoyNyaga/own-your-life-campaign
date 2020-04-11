@@ -77,7 +77,6 @@ ActiveRecord::Schema.define(version: 2020_04_11_175359) do
     t.string "expectations"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_presentations_on_email", unique: true
   end
 
   create_table "questionaires", force: :cascade do |t|

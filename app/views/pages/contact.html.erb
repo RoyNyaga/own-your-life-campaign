@@ -29,10 +29,11 @@
 		<div class="col-md-5 text-dark my-5">
       <div id="form">
         <%= simple_form_for @message do |f| %>
-          <%= f.input :name %>
-          <%= f.input :email %>
+          <%= f.error_notification %>
+          <%= f.input :name, required: true %>
+          <%= f.input :email, required: true, type: "email" %>
           <%= f.input :whatsapp_number %>
-          <%= f.input :message %>
+          <%= f.input :message, required: true %>
           <%= f.button :submit, "SEND MESSAGE", id: "send-message-button" %>
         <% end %>
       </div>
