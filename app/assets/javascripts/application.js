@@ -21,5 +21,6 @@
 // To enable your javascript code to load with turbolinks, put it inside of the event listener below
 
 // document.addEventListener('turbolinks:load', function () {
-
+//   console.log(document.querySelector('#modalsignup'))
+//   $('#modalsignup').modal('show')
 // })
