@@ -9,7 +9,7 @@ class PresentationsController < ApplicationController
 			flash[:success] = "Thanks for submiting your presentation form #{@presentation.first_name}, We will get back to you in no time."
 			redirect_to root_path
 		else
-			flash.now[:danger] = "Sorry your form could not be submitted, please kindly address the erros below."
+			flash.now[:danger] = "Sorry your form could not be submitted, please kindly address the errors below."
 			render "new"
 		end
 	end
