@@ -20,7 +20,16 @@
 
 // To enable your javascript code to load with turbolinks, put it inside of the event listener below
 
-// document.addEventListener('turbolinks:load', function () {
-//   console.log(document.querySelector('#modalsignup'))
-//   $('#modalsignup').modal('show')
-// })
+document.addEventListener('turbolinks:load', function () {
+  $(document).ready(() => {
+    function myFunction (event) {
+      var position = $(this).scrollTop()
+      console.log(position)
+      if (position > 2000) {
+        $('#modalsignup').modal('show')
+      }
+    }
+
+    window.onscroll = function () { myFunction(event) }
+  })
+})
