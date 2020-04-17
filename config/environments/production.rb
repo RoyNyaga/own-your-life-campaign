@@ -110,7 +110,6 @@ Rails.application.configure do
    :port => 587,
     # :port => 465,
    :authentication => :plain,
-   authentication: :login,
    :enable_starttls_auto => true
   }
 
