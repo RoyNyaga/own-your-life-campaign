@@ -101,13 +101,14 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
 
   ActionMailer::Base.smtp_settings = {
-   :user_name => ENV['ACCOUNT_NAME'],
-   :password => ENV['SENDGRID_PASSWORD'],
+   :user_name => ENV['SENDGRID_ACCOUNT_USERNAME'],
+   :password => ENV['SENDGRID_ACCOUNT_PASSWORD'],
    :domain => 'own-your-life-campaign.herokuapp.com',
    :address => 'smtp.sendgrid.net',
-   :port => 587,
+   # :port => 587,
+    :port => 465,
    :authentication => :plain,
    :enable_starttls_auto => true
   }
-  
+
 end
