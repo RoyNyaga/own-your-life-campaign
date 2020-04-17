@@ -97,6 +97,8 @@ Rails.application.configure do
     :host => 'https://own-your-life-campaign.herokuapp.com/'
   }
 
+  config.action_mailer.default_options = { from: "itstechcam@gmail.com" }
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
 
