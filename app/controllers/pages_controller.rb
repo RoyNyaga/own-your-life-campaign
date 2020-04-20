@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def home
   	@frame = "https://www.youtube.com/embed/9YffrCViTVk"
   	@message = Message.new
+    @invitation = Invitaion.new
   end
 
   def about
