@@ -279,23 +279,13 @@
     <div class="modal fade" id="modalsignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-          <form class="p-5" id="signup-form">
-            <h5>Sign Up</h5>
-            <div class="input-field">
-              <label for="signup-email">Email address</label>
-              <input class="form-control" type="email" id="signup-email" required />
-            </div>
-
-            <div class="input-field">
-              <label for="signup-password">Choose a password</label>
-              <input class="form-control" type="password" id="signup-password" required />
-            </div>
-            <div class="input-field">
-              <label for="signup-bio">Biography</label>
-              <input class="form-control" type="text" id="signup-bio" required />
-            </div>
-            <button class="btn btn-secondary mt-4">Sign up</button>
-          </form>
+          <h6>Hello There!! Get an invitation to join our online conference and know more about the business and how much you can make</h6>
+          <%= simple_form_for @invitation do |f| %>
+              <%= f.input :email %>
+              <%= f.input :name %>
+              <%= f.input :phone_number %>
+              <%= f.button :submit, "Send", id: "send-invitation-button" %>
+            <% end %>
         </div>
       </div>  
     </div>
