@@ -97,30 +97,19 @@ Rails.application.configure do
     :host => 'https://own-your-life-campaign.herokuapp.com/'
   }
 
+  config.action_mailer.default_options = { from: "itstechcam@gmail.com" }
+
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
 
   ActionMailer::Base.smtp_settings = {
-   :user_name => ENV['SENDGRID_USERNAME'],
-   :password => ENV['SENDGRID_PASSWORD'],
-   :from => 'nyagaandreroy@gmail.com',
+   :user_name => "itsteach",
+   :password => "just for jesus1994",
    :domain => 'own-your-life-campaign.herokuapp.com',
    :address => 'smtp.sendgrid.net',
    :port => 587,
    :authentication => :plain,
    :enable_starttls_auto => true
   }
-
-  # config.action_mailer.default_options = { from: 'nyagaandreroy@gmail.com' }
-
-  # config.action_mailer.smtp_settings = {
-  #  address: 'smtp.gmail.com', 
-  #  port: 587,
-  #  authentication: 'plain',
-  #  enable_starttls_auto: true,
-  #  user_name: ENV['GMAIL_USERNAME'],
-  #  password: ENV['GMAIL_PASSWORD'],
-  #  openssl_verify_mode: 'none'
-  #  }
-
+  
 end

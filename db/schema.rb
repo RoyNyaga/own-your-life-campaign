@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_28_032339) do
+ActiveRecord::Schema.define(version: 2020_04_20_123731) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,12 +50,62 @@ ActiveRecord::Schema.define(version: 2020_02_28_032339) do
     t.index ["user_id"], name: "index_courses_on_user_id"
   end
 
+  create_table "invitations", force: :cascade do |t|
+    t.string "email"
+    t.string "name"
+    t.string "phone_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "lessons", force: :cascade do |t|
     t.string "name"
     t.string "content"
     t.string "video_link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "whatsapp_number"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "presentations", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "phone"
+    t.string "email"
+    t.string "facebook_username"
+    t.string "address"
+    t.string "expectations"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "questionaires", force: :cascade do |t|
+    t.string "question_one"
+    t.string "question_two"
+    t.string "question_three"
+    t.string "question_four"
+    t.string "question_seven"
+    t.string "name"
+    t.string "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "whats_app"
+    t.string "referral_code"
+    t.string "facebook"
+    t.string "question_five"
+    t.string "question_six"
+    t.string "country_select"
+    t.string "question_eight"
+    t.string "question_nine"
+    t.string "question_ten"
   end
 
   create_table "users", force: :cascade do |t|

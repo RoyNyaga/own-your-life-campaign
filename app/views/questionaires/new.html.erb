@@ -1,0 +1,87 @@
+<div class="container d-none d-md-block web-view-margin" style="margin-top: 150px"></div>
+<div class="container d-md-none phone-view-margin" style="margin-top: 100px"></div>
+<div class='container'>
+  <h5 class="">NO SELLING NO REGISTRATION FEE! limited membership available.</h5>
+  <h5 class="my-5 text-center bold">Quick Questionnaire</h5>
+</div>
+
+<div class="container py-5" id="questionaire-wrapper">
+  
+  <%= simple_form_for(@questionaire) do |f| %>
+    <%= f.error_notification %>
+    	<ol>
+    		<li>
+    			<%= f.input :question_one, as: :radio_buttons, required: true, collection: ["Be in business for yourself", "Work for someone else"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Would you prefer being in your own business or working for someone else?"
+              %>
+    		</li>
+    		<li>
+    			<%= f.input :question_two, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you have any business or project that needs funding?" %>
+    		</li>
+    		<li>
+    			<%= f.input :question_three, as: :radio_buttons, required: true, collection: ["5.000$-10.000$", "10.000$-15.000$", "15.000$-30.000$", "30.000$-50.000$", "50.000$-100.000$"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "How much would you need to startup or expand this business or project." %>
+    		</li>
+    		<li>
+          <p>Name the business or project you will be starting if you raise the desired capital?</p>
+    			<%= f.input :question_four, required: true, label: false %>
+    		</li>
+        <li>
+          <%= f.input :question_five, as: :radio_buttons, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you need financial aid for anything else apart from to start a business?" %>
+        </li>
+         <li>       
+          <%= f.input :question_six, label: "If yes what?" %>
+        </li>
+        <li>
+          <%= f.input :question_seven, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If a reservation is made for you to receive the details for this campaign will you spare some time out of your busy schedule to honor the invitation?" %>
+        </li>
+        <li>
+          <%= f.input :question_eight, as: :radio_buttons, required: true, collection: ["Yes", "No", "I do but I’m in Isolation"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "Do you currently have a job ?" %>
+        </li>
+        <li>
+          <%= f.input :question_nine, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: " have you ever worked online before?" %>
+        </li>
+        <li>
+          <%= f.input :question_ten, as: :radio_buttons, required: true, collection: ["Yes", "No"], item_wrapper_class: "d-inline-block radio-buttons mx-3", label: "If not would you mind working from home?" %>
+        </li>
+       
+      </ol>
+    		<div class="row">
+          <div class="col-md-12">
+              <h6 class="bold"><u>Personal Information</u></h6>
+          </div>
+          <div class="col-md-2">
+            <%= f.input :name, required: true %>
+          </div>
+          <div class="col-md-2">
+            <%= f.input :phone, required: true %>
+          </div>
+          <div class="col-md-3">
+            <%= f.input :country_select, required: true, label: "Country" %>
+          </div>
+          <div class="col-md-2">
+            <%= f.input :whats_app %>
+          </div>
+          <div class="col-md-3">
+            <%= f.input :facebook %>
+          </div>
+          <div class="col-md-4 text-center">
+          </div>
+          <div class="col-md-4 text-center">
+            <%= f.input :referral_code %>
+          </div>   		
+    		</div>
+    	
+      <%= f.button :submit, "Submit form", id: "questionaire-btn" %>
+  <% end %>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center my-5" id="questionaire-last-div">
+      <h5>If you are selected you will receive a call in the next three(3) days from one of our consultants.</h4>
+      <h4>Thank you for your time</h4>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+

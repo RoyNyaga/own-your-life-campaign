@@ -1,0 +1,374 @@
+body{
+	margin: 0px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.1em;
+}
+
+.alert{
+	margin-top: 130px;
+	font-size: 1.5em;
+
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.first-letter-decoration{
+	font-size: 2em;
+	position: relative;
+	top: 7px;
+	color: #1ba8ca;
+}
+
+/*#######button classes#########*/
+
+.button-bg-red{
+	padding: 10px;
+	border: 2px solid #de1a1a;
+	color: white;
+	background: #de1a1a;
+}
+
+.button-bg-red:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+.button-bg-blue{
+	padding: 10px;
+	border: 2px solid #7acde0;
+	color: white;
+	background: #7acde0;
+}
+
+.button-bg-blue:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+.button-bg-orange{
+	padding: 10px;
+	border: 1px solid #ff6633;
+	color: white;
+	background: #ff6633;
+}
+
+.button-bg-orange:hover{
+	background: white;
+	color: black;
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+/*############# button classes end ############# */
+
+/*####### navbar-header-carousel #######*/
+
+#navbar-wrapper-nav{
+	background: white;
+}
+
+.nav-link{
+	color: black;	
+}
+
+.nav-link:hover{
+	padding: 10px;
+	border-bottom: 2px solid black;
+	text-decoration: none;
+	color: black;
+}
+
+.carousel-item{
+	height: 100%;
+	min-height: 300px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background: red;
+}
+
+.carousel-caption{
+	bottom: 250px;
+}
+.carousel-caption h5{
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	background: #1f2933b3;
+}
+
+.carousel-caption p{
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	background: #1f2933b3;
+}
+
+.carousel-caption a{
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+
+.w-100{
+	height: 100vh;
+}
+
+
+/*###### Home page section start ######*/
+
+#home-page-level-one-left{
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1585429836/own-your-life/Layer_7_w1bupb.jpg")center/cover no-repeat;
+}
+
+#home-page-level-one-left-small{
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408152/own-your-life/Site_pic_1_fjboeb.jpg")center/cover no-repeat;
+	height: 42vh;
+}
+
+#home-page-level-one-right{
+	background: #ff6633;
+}
+
+#home-page-level-two-div{
+	font-family: 'Oswald', sans-serif;	
+}
+
+.home-page-level-three-blue-div{
+	background: #7acde0;
+	color: white;
+}
+
+.level-three-icons {
+	color: #5f5b5b;
+	background: white;
+	font-size: 1em;
+	padding: 20px;
+	border: 1px solid white;
+	border-radius: 50px;
+}
+
+#home-page-level-four-blue-div{
+	background: #7acde0;
+}
+
+#why-most-people-are-poor-picture{
+	background: url("https://res.cloudinary.com/it-s-tech/image/upload/v1584408153/own-your-life/2600_s4sn4z.jpg")center/cover no-repeat;
+}
+
+#home-page-level-five-div{
+	background: #0a6363;
+	color: white;
+	text-align: center;
+	margin: 100px 0;
+}
+
+.home-page-level-six-orange-div{
+	background: #ff6633;
+	color: white;
+}
+
+.home-page-level-six-blue-div{
+	background: #7acde0;
+}
+
+#home-page-level-seven-div{
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/it-s-tech/image/upload/v1584408098/own-your-life/Banner_1_pyhquv.jpg')center/cover fixed no-repeat;
+}
+
+#new_message .form-control {
+	border: none;
+	border-bottom: 2px solid #989494;
+	color: black;
+}
+
+#new_message .form-control:focus {
+	outline: none;
+	border: none;
+}
+
+#send-message-button{
+	background: #ff6633;
+	padding: 10px;
+}
+
+#send-message-button:hover{
+	background: #efa288;
+}
+
+.home-page-contact-icons{
+	font-size: 1.7em;
+	padding: 10px;
+	background: #ff6633;
+	border: 2px solid #f73f07;
+	border-radius: 50px;
+	color: white;
+}
+
+.special{
+	padding-left: 58px;
+}
+
+.twitter {
+	background: #2a7bd2;
+	color: white;
+	font-size: 2em;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.linkedin{
+	font-size: 2em;
+	background: white;
+	color: #2a7bd2;
+	border: 1px solid #2a7bd2;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+.facebook{
+	font-size: 2em;
+	background: white;
+	color: #1414af;
+	paddding: 10px;
+	border: 1px solid #1414af;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.whatsapp{
+	font-size: 2em;
+	background: white;
+	color: green;
+	paddding: 10px;
+	border: 1px solid green;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+/*######### Home page section end########## */
+
+/*########## About page Start ########*/
+
+.about-page-headings-blue {
+	color: #3ebfd4;
+}
+
+/*######### life-style-page ##########*/ 
+
+#life-style-page-level-one{
+	
+}
+
+/*############## contact page ##########*/
+
+.contact-links {
+	color: #1ba8ca;
+}
+
+.contact-links:hover {
+	color: #1ba8ca;
+}
+
+.about-testimony-photos {
+	width: 100%;
+	border: 2px solid white;
+	border-radius: 50%;
+}
+
+/*################### Footer ###############*/
+#footer-section {
+	font-size: 0.7em;
+	background: #175c6d;
+	color: white;
+}
+
+.footer-links{
+	color: white;
+}
+
+.footer-links:hover{
+	color: #fda331;
+}
+
+/*########### Questionaire ######*/
+
+#questionaire-wrapper{
+	background: #79d8ef;
+	padding: 10px;
+	border: 5px solid #f18905;
+	border-radius: 10px;	
+}
+
+.new_questionaire input {
+	border-bottom: 2px solid #f18905;
+	color: black;
+}
+
+.new_questionaire input:focus {
+	color: black;
+	border: none;
+	border-bottom: 2px solid #f18905;
+	outline: none;
+	background: white; 
+}
+
+#questionaire-btn{
+	padding: 10px;
+	border: 2px solid #f18905;
+	background: #89def3;
+	position: relative;
+	left: 20px;
+}
+
+#questionaire-btn:hover {
+	background: transparent;
+}
+
+#questionaire_country_select{
+	color: black;
+}
+
+/*############# blog #############*/
+
+#blog-wrapper-div{
+	background: #c3ebf5;
+}
+
+.blog-item-wrapper{
+	border: 2px solid #f18905; 
+}
+
+.blog-medium-headings {
+	color: #e0840f;
+}
+
+/*################# Appointment section ##################*/
+#presentaion-header-div {
+	background: url(https://res.cloudinary.com/it-s-tech/image/upload/v1586630088/own-your-life/wall_mock_up_1_vsofjo.jpg)center/cover fixed no-repeat;
+	height: 60vh;
+}
+
+#presentation-form-div{
+	background: #f3ce9f;
+	padding: 20px;
+}
+
+#send-presentation-button{
+	padding: 10px;
+	width: 120px;
+	background: #ff6633;
+}
+#send-presentation-button:hover{
+	background: #f19a7d;
+}

@@ -67,8 +67,12 @@ gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'rails_12factor', '~> 0.0.3'
 gem 'sendgrid-ruby', '~> 6.1'
 gem 'activeadmin', '~> 2.6', '>= 2.6.1'
-gem 'country_select', '~> 4.0'
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'font_awesome5_rails'
+gem 'country_select', '~> 4.0' # NB country sellect stores only country codes in the database, to convert the code
+                              # to country name, use the normalize_country gem. call it on the country field 
+                              # instance gets before an instance gets created in the database to change(use a before create mehtod)
+                              #Open the Questionaire model to see an example.
+gem 'normalize_country', '~> 0.2.3'
