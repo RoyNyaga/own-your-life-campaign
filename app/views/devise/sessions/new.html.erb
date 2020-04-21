@@ -6,6 +6,7 @@
         <h4 class=" mt-5 mb-5 text-white bold text-center">Log in</h4>
         <div id="login-form-holder" class="mb-5">
           <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <%= f.error_notification %>
             <%= f.input :email %>
             <%= f.input :password, autocomplete: "current-password" %>
             <% if devise_mapping.rememberable? %>
