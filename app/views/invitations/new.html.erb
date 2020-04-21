@@ -5,7 +5,7 @@
 				<%= f.error_notification %>
 				<%= f.input :email %>
 				<%= f.input :name %>
-				<%= f.input :phone_number %>
+				<%= f.input :phone_number, placeholder: "Include country code ex(+237)" %>
 				<%= f.button :submit, "Send", class: "btn btn-secondary", id: "send-invitation-button" %>
     <% end %>
 		</div>
