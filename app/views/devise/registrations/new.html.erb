@@ -1,42 +1,46 @@
 
 <div class="container-fluid" id="signup-form-wrapper-div">
   <div class="row">
+    <div class="col-md-12">
+      <h5 class="mt-5 bold text-center text-white signup-form-header-five d-none d-md-block">Create An Account With Us.</h5>
+      <h6 class="mt-5 bold text-center text-white d-md-none">Create An Account With Us.</h6>
+    </div>
     <div class="col-md-4"></div>
-      <div class="col-md-3 d-flex align-items-center" id="signup-form-div">
-        <div id="signup-form-holder">
-          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= f.error_notification %>
-            <div class="row">
-              <div class="col-12">
-                <%= f.input :name %>
-              </div>
-              <div class="col-12">
-                 <%= f.input :email %>
-              </div>
-              <div class="col-12">
-                <% if @minimum_password_length %>
-                  (<%= @minimum_password_length %> characters minimum)
-                <% end %>
-              <%= f.input :password %>
-              </div>
-              <div class="col-12">
-                <%= f.input :password_confirmation %>
-              </div>
-              <div class="col-md-6">
-                <%= f.input :country_select %>
-              </div>
-              <div class="col-md-6">
-                <%= f.input :phone %>
-              </div>
-              <div class="col-12">
-                <%= f.submit "Create Account", id: "signup-button" %>
-              </div>              
+    <div class="col-md-3 my-5" id="signup-form-div">
+      <div id="signup-form-holder">
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= f.error_notification %>
+          <div class="row">
+            <div class="col-12">
+              <%= f.input :name %>
             </div>
-          <% end %>
-          <h6 class=" mt-2 bold">Already have an account, login instead.</h6>
-          <%= render "devise/shared/links" %>
-        </div> 
-      </div>
+            <div class="col-12">
+               <%= f.input :email %>
+            </div>
+            <div class="col-12">
+              <% if @minimum_password_length %>
+                (<%= @minimum_password_length %> characters minimum)
+              <% end %>
+            <%= f.input :password %>
+            </div>
+            <div class="col-12">
+              <%= f.input :password_confirmation %>
+            </div>
+            <div class="col-md-6">
+              <%= f.input :country_select %>
+            </div>
+            <div class="col-md-6">
+              <%= f.input :phone %>
+            </div>
+            <div class="col-12">
+              <%= f.submit "Create Account", id: "signup-button" %>
+            </div>              
+          </div>
+        <% end %>
+        <h6 class=" mt-2 bold">Already have an account, login instead.</h6>
+        <%= render "devise/shared/links" %>
+      </div> 
+    </div>
     <div class="col-md-4"></div>
   </div>
 </div>

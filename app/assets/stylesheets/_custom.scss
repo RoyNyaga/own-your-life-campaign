@@ -402,7 +402,6 @@ body{
 }
 
 #signup-form-div{
-	height: 110vh;
 	font-size: 0.7em;
 }
 
@@ -411,6 +410,11 @@ body{
 	background: transparent;
 	border-bottom: 2px solid #0a6479;
 	height: 30px;
+}
+
+.signup-form-header-five{
+	position: relative;
+	right: 70px;
 }
 
 .new_user input:focus {
