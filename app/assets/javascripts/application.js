@@ -19,13 +19,28 @@
 
 document.addEventListener('turbolinks:load', function () {
   $(document).ready(() => {
+  	const addCookie = () => {
+  		document.cookie = 'oylcampaignFirstTimerCookie=John Doe; expires=Thu, 18 Dec 2030 12:00:00 UTC'
+  		console.log('cookie has been added')
+  	}
+
+  	const checkCookiePresence = () => {
+  		return !!document.cookie.split('; ').includes('oylcampaignFirstTimerCookie=John Doe')
+  	}
+
     function popForm (event) {
-      var position = $(this).scrollTop()
-      if (position > 2000) {
-        $('#modalsignup').modal('show')
-      }
+
     }
 
-    window.onscroll = function () { popForm(event) }
+    const displayPopUpForm = () => {
+    	var position = $(this).scrollTop()
+      if (position > 2000 && !checkCookiePresence()) {
+      	addCookie()
+		   	$('#modalsignup').modal('show')
+    	}
+    }
+
+    window.onscroll = function () { displayPopUpForm() }
+    console.log('Cookie presence:', checkCookiePresence())
   })
 })
