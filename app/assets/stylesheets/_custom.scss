@@ -394,3 +394,56 @@ body{
 #send-invitation-button{
 	background: #165c6d;
 }
+
+/*############# Signup for ####################*/
+
+#signup-form-wrapper-div{
+	background: #ec982d;	
+}
+
+#signup-form-div{
+	height: 110vh;
+	font-size: 0.7em;
+}
+
+.new_user input {
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #0a6479;
+	height: 30px;
+}
+
+.new_user input:focus {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.new_user select {
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #0a6479;
+	height: 35px;
+}
+
+.new_user select:hover {
+	background: transparent;
+}
+
+#signup-form-holder{
+	padding: 10px;
+	background: #f1e3d1;
+	border: 2px solid #0a6479;
+}
+
+#signup-button{
+	background: #165c6d;
+	color: white;
+	border: 2px solid #0a6479;
+	height: 30px;
+}
+
+#signup-button:hover {
+	background: #24b1d4;
+	border: 2px solid #24b1d4;
+}
