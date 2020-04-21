@@ -1,3 +1,4 @@
+
 body{
 	margin: 0px;
 	font-family: 'Roboto Slab', serif;
@@ -5,8 +6,8 @@ body{
 }
 
 .alert{
-	margin-top: 130px;
-	font-size: 1.5em;
+	margin-top: 80px;
+	font-size: 0.7em;
 
 }
 
@@ -382,5 +383,14 @@ body{
 /*######################## Invitations page ########################*/
 #new-invitation-wrapper{
 	height: 100vh;
-	background: black;
+	background: #ef9429;
+}
+
+#new-invitation-form-div{
+	padding: 20px;
+	border: 3px solid white;
+}
+
+#send-invitation-button{
+	background: #165c6d;
 }

@@ -264,8 +264,8 @@
           <div class="col-md-6 text-dark">
             <h6 style="font-weight: 700;">SAY HELLO!</h6>
             <%= simple_form_for @message do |f| %>
-              <%= f.input :name %>
-              <%= f.input :email %>
+              <%= f.input :name, required: true %>
+              <%= f.input :email, required: true %>
               <%= f.input :whatsapp_number %>
               <%= f.input :message %>
               <%= f.button :submit, "SEND MESSAGE", id: "send-message-button" %>
@@ -281,9 +281,9 @@
         <div class="modal-content">
           <h6 class="bold">Hello There!! Get an invitation to join our online conference and know more about the business and how much you can make.</h6>
           <%= simple_form_for @invitation do |f| %>
-              <%= f.input :email %>
-              <%= f.input :name %>
-              <%= f.input :phone_number %>
+              <%= f.input :email, required: true %>
+              <%= f.input :name, required: true %>
+              <%= f.input :phone_number, placeholder: "include country code(ex +237) " %>
               <%= f.button :submit, "Send", class: "btn btn-secondary", id: "send-invitation-button" %>
             <% end %>
         </div>
