@@ -26,3 +26,5 @@ ActiveAdmin.register AdminUser do
   end
 
 end
+
+# rails generate active_admin:resource [MyModelName]

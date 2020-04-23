@@ -1,3 +1,4 @@
+
 body{
 	margin: 0px;
 	font-family: 'Roboto Slab', serif;
@@ -5,8 +6,8 @@ body{
 }
 
 .alert{
-	margin-top: 130px;
-	font-size: 1.5em;
+	margin-top: 80px;
+	font-size: 0.7em;
 
 }
 
@@ -256,6 +257,12 @@ body{
 	padding: 10px;
 }
 
+.modal-content{
+	padding: 20px;
+	border: 4px solid orange;
+	border-radius: 10px;
+}
+
 /*######### Home page section end########## */
 
 /*########## About page Start ########*/
@@ -371,4 +378,94 @@ body{
 }
 #send-presentation-button:hover{
 	background: #f19a7d;
+}
+
+/*######################## Invitations page ########################*/
+#new-invitation-wrapper{
+	height: 100vh;
+	background: #ef9429;
+}
+
+#new-invitation-form-div{
+	padding: 20px;
+	border: 3px solid white;
+}
+
+#send-invitation-button{
+	background: #165c6d;
+}
+
+/*############# Signup for ####################*/
+
+#signup-form-wrapper-div{
+	background: #ec982d;	
+}
+
+#signup-form-div{
+	font-size: 0.7em;
+}
+
+.new_user input {
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #0a6479;
+	height: 30px;
+}
+
+.signup-form-header-five{
+	position: relative;
+	right: 70px;
+}
+
+.new_user input:focus {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.new_user select {
+	border: none;
+	background: transparent;
+	border-bottom: 2px solid #0a6479;
+	height: 35px;
+}
+
+.new_user select:hover {
+	background: transparent;
+}
+
+#signup-form-holder{
+	padding: 10px;
+	background: #f1e3d1;
+	border: 2px solid #0a6479;
+}
+
+#signup-button{
+	background: #165c6d;
+	color: white;
+	border: 2px solid #0a6479;
+	height: 30px;
+}
+
+#signup-button:hover {
+	background: #24b1d4;
+	border: 2px solid #24b1d4;
+}
+
+/*################ Login form ################*/
+
+#login-form-wrapper-div{
+	background: #ec982d;
+}
+
+#login-form-holder{
+	padding: 10px;
+	background: #f1e3d1;
+	border: 2px solid #0a6479;
+}
+
+/*################## Password reset ############*/
+
+#password-reset-wrapper-div{
+	background: #ec982d;
 }

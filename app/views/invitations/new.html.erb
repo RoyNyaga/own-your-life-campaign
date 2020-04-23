@@ -1,0 +1,13 @@
+<div class="container-fluid" id="new-invitation-wrapper">
+	<div class="row h-100">
+		<div class="col-md-4 mx-auto my-auto" id="new-invitation-form-div">
+			<%= simple_form_for @invitation do |f| %>
+				<%= f.error_notification %>
+				<%= f.input :email %>
+				<%= f.input :name %>
+				<%= f.input :phone_number, placeholder: "Include country code ex(+237)" %>
+				<%= f.button :submit, "Send", class: "btn btn-secondary", id: "send-invitation-button" %>
+    <% end %>
+		</div>
+	</div>
+</div>

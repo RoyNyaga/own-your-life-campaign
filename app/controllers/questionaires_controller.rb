@@ -5,12 +5,12 @@ class QuestionairesController < ApplicationController
 
   def create
   	@questionaire = Questionaire.create(questionaire_params)
-	if @questionaire.save
-		flash[:success] = "Thanks for filling the questionaire #{@questionaire.name}, We will get back to you in no time."
-		redirect_to root_path
-	else
-		render "new"
-	end
+  	if @questionaire.save
+  		flash[:success] = "Thanks for filling the questionaire #{@questionaire.name}, We will get back to you in no time."
+  		redirect_to root_path
+  	else
+  		render "new"
+  	end
   end
 
   private

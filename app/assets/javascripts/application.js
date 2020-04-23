@@ -10,9 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require popper
-//= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
@@ -20,16 +17,30 @@
 
 // To enable your javascript code to load with turbolinks, put it inside of the event listener below
 
-// document.addEventListener('turbolinks:load', function () {
-//   $(document).ready(() => {
-//     function myFunction (event) {
-//       var position = $(this).scrollTop()
-//       console.log(position)
-//       if (position > 2000) {
-//         $('#modalsignup').modal('show')
-//       }
-//     }
+document.addEventListener('turbolinks:load', function () {
+  $(document).ready(() => {
+  	const addCookie = () => {
+  		document.cookie = 'oylcampaignFirstTimerCookie=John Doe; expires=Thu, 18 Dec 2030 12:00:00 UTC'
+  		console.log('cookie has been added')
+  	}
 
-//     window.onscroll = function () { myFunction(event) }
-//   })
-// })
+  	const checkCookiePresence = () => {
+  		return !!document.cookie.split('; ').includes('oylcampaignFirstTimerCookie=John Doe')
+  	}
+
+    function popForm (event) {
+
+    }
+
+    const displayPopUpForm = () => {
+    	var position = $(this).scrollTop()
+      if (position > 2000 && !checkCookiePresence()) {
+      	addCookie()
+		   	$('#modalsignup').modal('show')
+    	}
+    }
+
+    window.onscroll = function () { displayPopUpForm() }
+    console.log('Cookie presence:', checkCookiePresence())
+  })
+})
