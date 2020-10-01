@@ -7,7 +7,7 @@ class QuestionairesController < ApplicationController
   	@questionaire = Questionaire.create(questionaire_params)
   	if @questionaire.save
   		flash[:success] = "Thanks for filling the questionaire #{@questionaire.name}, We will get back to you in no time."
-  		redirect_to root_path
+  		redirect_to "https://labuenavidaproject.com/"
   	else
   		render "new"
   	end
